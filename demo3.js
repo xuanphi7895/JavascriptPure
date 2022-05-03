@@ -9,7 +9,7 @@ window.addEventListener('load',function(){
     //demo 1
     var list1=createTag("li","demo1","",oderlist);
     var link1=createTag("a","link_demo1","Demo 1",list1);
-    link1.setAttribute("href","../DEMO1/JSON/index.html");
+    link1.setAttribute("href","../demo1/index1.html");
     //demo 2
     var list2=createTag("li","demo2","",oderlist);
     var link2=createTag("a","link_demo2","Demo 2",list2);
