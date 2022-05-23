@@ -2,10 +2,10 @@
 // var _page = function () {
 
 //     scroll = function () {
-        
+
 //     };
 //     loadMore = function () {
-       
+
 //     };
 //     init = function () {
 //         scroll();
@@ -18,21 +18,18 @@
 //     _page();
 // });
 
-jQuery(document).ready(function($){
+jQuery(document).ready(function($) {
 
- "user strict";
-//Init 
-_page();
-
- 
-
+    "user strict";
+    //Init 
+    _page();
 
 });
 
 
 var _page = function() {
 
-    init = function(){
+    init = function() {
         //0. Menu
         // initMenu();
         //1. Favorte 
@@ -51,7 +48,7 @@ var _page = function() {
     //     var menuActive = false;
     //     var hamburgerClose = $('.hamburger_close');
     //     var fsOverlay = $('.fs_menu_overlay');
-        
+
     //     if (hamburger.length) {
     //         hamburger.on('click', function() {
     //             // if (!menuActive) {
@@ -78,7 +75,7 @@ var _page = function() {
     //                     }
     //                 }
     //             }
-        
+
     //             //1 Show togger navbar
 
     //         });
@@ -100,9 +97,9 @@ var _page = function() {
     //         });
     //     }
 
-        
+
     //     //
-       
+
     // function openMenu ()  {
     //     menu.addClass('active');
     //     fsOverlay.css('pointer-events', 'auto');
@@ -118,18 +115,18 @@ var _page = function() {
 
 
     initFavorite = function() {
-        if($('.favorite').length){
-    
+        if ($('.favorite').length) {
+
             var favs = $('.favorite');
-    
-            favs.each(function(){
+
+            favs.each(function() {
                 var fav = $(this);
                 var active = false;
-                if(fav.hasClass('active')){
+                if (fav.hasClass('active')) {
                     active = true;
                 }
-                fav.on('click', function(){
-                    if (active){
+                fav.on('click', function() {
+                    if (active) {
                         fav.removeClass('active');
                         active = false;
                     } else {
@@ -141,14 +138,13 @@ var _page = function() {
         }
     };
 
-    initProductFilter = function(){
-        if($('.grid_sorting_button').length){
-            $('.grid_sorting_button').on('click', function(){
+    initProductFilter = function() {
+        if ($('.grid_sorting_button').length) {
+            $('.grid_sorting_button').on('click', function() {
                 $('.grid_sorting_button.active').removeClass('active');
                 $(this).addClass('active');
 
                 var selector = $(this).attr('data-filter');
-                
                 //Use https://isotope.metafizzy.co/
                 $('.product-grid').isotope({
                     filter: selector,
@@ -158,14 +154,14 @@ var _page = function() {
                         queue: false
                     }
                 });
-            return false;
+                return false;
             });
         }
     };
 
-    initSlider = function(){
+    initSlider = function() {
 
-        if($('.product_slider_container').length) {
+        if ($('.product_slider_container').length) {
 
             var slider1 = $('.product_slider');
             slider1.owlCarousel({
@@ -173,23 +169,23 @@ var _page = function() {
                 dots: false,
                 nav: false,
                 responsive: {
-                    0 : {items: 1},
-                    480: {items: 2},
-                    768 : {items: 3},
-                    991: {items: 4},
-                    1280 : {items: 5},
-                    1440: {items: 6},
+                    0: { items: 1 },
+                    480: { items: 2 },
+                    768: { items: 3 },
+                    991: { items: 4 },
+                    1280: { items: 5 },
+                    1440: { items: 6 },
                 }
             });
 
             if ($('.product_slider_nav_left').length) {
-                $('.product_slider_nav_left').on('click', function(){
+                $('.product_slider_nav_left').on('click', function() {
                     slider1.trigger('prev.owl.carousel');
                 });
             }
 
             if ($('.product_slider_nav_right').length) {
-                $('.product_slider_nav_right').on('click', function(){
+                $('.product_slider_nav_right').on('click', function() {
                     slider1.trigger('next.owl.carousel');
                 });
             }
@@ -202,7 +198,7 @@ var _page = function() {
         //pageSize
         var start = 0;
         var pageSize = 5;
-       
+
         var items = $('.product-grid .product-item');
         $(items).slice(start, pageSize).show().css("display", "block");
         //Xử lý sự kiện load More
@@ -234,12 +230,12 @@ var _page = function() {
 
         // //
         // $('#showLess').on('click', function() {
-            
+
         // });
         // $('#loadmore').on('click', function() {
         //     var length = $('.product-grid .product-item').length;
         //     if (length > 5) {
-           
+
         //         const elementList = [...document.querySelectorAll('.product-grid .product-item')];
         //         console.log(elementList);
         //         for (let i = 5; i <= length; i++)
@@ -253,7 +249,7 @@ var _page = function() {
         //     } else {
         //         console.log(length);
         //     }
-            
+
         // });
         // var pageSize = 5;
         // var length = $('.product-grid .product-item').length;
@@ -273,7 +269,8 @@ var _page = function() {
 
     };
 
+
     return init();
 };
 
-//Template literals, generic list 
+//Template literals, generic list
