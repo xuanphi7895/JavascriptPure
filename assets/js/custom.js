@@ -194,13 +194,24 @@ var _page = function() {
     };
 
     initLoadMore = function() {
-        //B1. Hiển thị tổng 5 cái trên tổng số item
-        //pageSize
-        var start = 0;
-        var pageSize = 5;
 
-        var items = $('.product-grid .product-item');
-        $(items).slice(start, pageSize).show().css("display", "block");
+        //pageSize
+        // $(".product-grid .product-item").slice(0, 5).show();
+
+        // $("#loadmore").on("click", function() {
+        //     $(".product-grid .product-item:hidden").slice(0, 2).slideDown();
+        //     if ($(".product-grid .product-item:hidden").length == 0) {
+        //         $("#loadmore").fadeOut("slow");
+        //     }
+        // });
+
+
+        //B1. Hiển thị tổng 5 cái trên tổng số item
+        // var start = 0;
+        // var pageSize = 5;
+
+        // var items = $('.product-grid .product-item');
+        // $(items).slice(start, pageSize).show().css("display", "block");
         //Xử lý sự kiện load More
         //B1.lấy tổng số lượng item sp
         //B2.Khi nhấn buton loadMore, tăng thêm 5 đơn vị
