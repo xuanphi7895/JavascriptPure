@@ -1,4 +1,70 @@
 @charset "utf-8";
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+    .main_slider_content {
+        margin-bottom: 23px;
+    }
+    .shop_now_button {
+        margin-top: 20px;
+    }
+    .red_button a {
+        font-size: 12px;
+    }
+    .banner_item {
+        margin-bottom: 30px;
+        height: 210px;
+    }
+    .new_arrivals_title {
+        margin-top: 44px;
+    }
+    .product-item {
+        height: 345px;
+        width: 33.3333333%;
+    }
+    .product {
+        height: 345px;
+    }
+    .grid_sorting_button {
+        font-size: 13px;
+        padding-left: 20px;
+        padding-right: 20px;
+        min-width: 80px;
+    }
+    .product_slider_container {
+        height: auto;
+    }
+    .product_slider_item .product-item {
+        height: 380px;
+    }
+    .benefit_col {
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .hamburger_menu {
+        right: -100%;
+        width: 100%;
+    }
+    .product-item {
+        width: 50%;
+        height: 420px;
+    }
+    .product {
+        height: 420px;
+    }
+}
+
+@media only screen and (max-width: 1169px) {}
+
 
 /* 1. Fonts */
 
@@ -146,6 +212,7 @@ h6 {
 /*  3. Home */
 
 .header {
+    height: 100px;
     position: fixed;
     top: 0;
     left: 0;
@@ -258,6 +325,61 @@ h6 {
 
 .logo_container a span {
     color: #ff6347;
+}
+
+
+/* search input */
+
+.search-field {
+    background-color: transparent;
+    background-image: url(https://wp-themes.com/wp-content/themes/twentythirteen/images/search-icon.png);
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    margin: 3px 0;
+    padding: 0 0 0 34px;
+    position: relative;
+    -webkit-transition: width 400ms ease, background 400ms ease;
+    transition: width 400ms ease, background 400ms ease;
+    width: 0px;
+}
+
+.search-field:focus {
+    background-color: #fff;
+    border: 1px solid #c3c0ab;
+    border-radius: 4px;
+    cursor: text;
+    outline: 0;
+    width: 250px;
+    color: dimgray;
+}
+
+.search-form .search-submit {
+    display: none;
+}
+
+
+/* togger */
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
 }
 
 
@@ -680,7 +802,8 @@ h6 {
 
 /* Hamburger */
 
-.hamburger_container {
+
+/* .hamburger_container {
     margin-left: 40px;
 }
 
@@ -698,6 +821,7 @@ h6 {
     position: fixed;
     top: 0;
     right: -400px;
+    width: 400px;
     height: 100vh;
     background: rgba(235, 235, 235, 0.95);
     z-index: 10;
@@ -706,7 +830,7 @@ h6 {
 
 .hamburger_menu {
     right: 0;
-}
+} */
 
 
 /* Slider nav */
@@ -754,7 +878,7 @@ h6 {
 }
 
 #loadMore {
-    margin: 50px auto 0px;
+    margin: 90px auto 0px;
     display: block;
     border: none;
     padding: 10px 20px;
@@ -847,7 +971,7 @@ h6 {
 }
 
 .footer {
-    background: #EDEFF1;
+    background: #272727;
     height: auto;
     padding-bottom: 30px;
     position: relative;
@@ -903,7 +1027,6 @@ h6 {
 .newsletter-box input#appendedInputButton {
     background: #FFFFFF;
     display: inline-block;
-    float: left;
     height: 30px;
     clear: both;
     width: 100%;
@@ -925,6 +1048,7 @@ h6 {
 
 .newsletter-box {
     overflow: hidden;
+    border-radius: 2px;
 }
 
 .bg-gray {
@@ -978,7 +1102,7 @@ h6 {
 }
 
 .footer-bottom {
-    background: #E3E3E3;
+    background: #ffff;
     border-top: 1px solid #DDDDDD;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -990,6 +1114,19 @@ h6 {
 
 .payments {
     font-size: 1.5em;
+}
+
+.text-product:hover {
+    color: white;
+}
+
+.contact li a {
+    color: #78828D;
+    background-color: #272727;
+}
+
+.contact li {
+    list-style: none;
 }
 
 

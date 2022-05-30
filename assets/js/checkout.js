@@ -1,9 +1,8 @@
-//Lấy thông tin được lưu trữ từ loacalStorage để hiển thị các sản phẩm đã được thêm
-var listProductLocalStorage = JSON.parse(
-    window.localStorage.getItem("products")
-);
 $(".checkout").on("click", function(e) {
-    // const listProductLocalStorage = window.localStorage.getItem("products");
+    //Lấy thông tin được lưu trữ từ loacalStorage để hiển thị các sản phẩm đã được thêm
+    var listProductLocalStorage = JSON.parse(
+        window.localStorage.getItem("products")
+    );
     console.log(listProductLocalStorage);
     $("#cartModal").modal("show");
     //Refresh page when add product
@@ -31,7 +30,12 @@ $(".show-list-product").on("click", ".delete-item", function(event) {
 
 function updateCart(listProduct) {
     //Cập nhật sản phẩm được thêm mới vào Giỏ hàng
+    $('.price').empty();
+    var sumTotal = 0;
     $.each(listProduct, function(index, value) {
+        //Tính tiền sản phẩm
+        const tempPrice = value.productPrice * value.productQuantity;
+        sumTotal = sumTotal + tempPrice;
         console.log(value);
         $(".show-list-product").append(`<tr>
         <td class="number"> ${index + 1}</td>
@@ -51,4 +55,6 @@ function updateCart(listProduct) {
     </td>
     </tr>`);
     });
+
+    $('.price').append('$ ' + sumTotal);
 }

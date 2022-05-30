@@ -1,27 +1,42 @@
 //Biến khởi tạo localStorage
+window.localStorage.clear();
 var productLocalStorage = [];
+
 $(".addToCard").on('click', function() {
-    window.localStorage.clear();
+    var listProductLocalStorage = JSON.parse(
+        window.localStorage.getItem("products")
+    );
+    // window.localStorage.clear();
     var showItem = 0;
     //Lấy tổng số sản phẩm hiển thị trên Layout
     let products = $('.product-grid .product-item');
+    console.log(products);
     //Lấy giá trị id được chọn
     let currentItemId = $(this).attr("data-id");
-
+    console.log(currentItemId);
 
     //Tạo biến chứa thông tin product lưu trữ dữ liệu
     const productName = products[currentItemId - 1].getElementsByClassName("product_name")[0].innerText;
-    const productPrice = products[currentItemId - 1].getElementsByClassName("product_price")[0].innerText;
+    const productPriceStr = products[currentItemId - 1].getElementsByClassName("product_price")[0].innerText;
+    //Lấy số/
+    let productPrice = productPriceStr.match(/\d/g);
+    //Gán lại thành 1 số
+    productPrice = productPrice.join('');
     const productImage = products[currentItemId - 1].getElementsByClassName("product_image")[0].getElementsByTagName('img')[0].getAttribute('src');
     const productId = currentItemId;
 
     // Tìm sản phẩm đã được thêm trước đó
     //Tìm kiếm giá trị productId tương ứng trong array, nếu tìm thấy thêm số lượng sản phẩm.
-    const duplicateProductIndex = listProductLocalStorage.filter(
-        (data) => data.productId === productId
-    );
+    const duplicateProductIndex = [];
+    if (Object.is(listProductLocalStorage).length > 0) {
+        duplicateProductIndex = listProductLocalStorage.filter(
+            (data) => data.productId === productId
+        );
+    }
+
     var quantity = 0;
-    if (duplicateProductIndex) {
+    console.log(duplicateProductIndex);
+    if (Object.is(duplicateProductIndex).length > 0) {
 
         console.log(duplicateProductIndex[0].productQuantity);
 
