@@ -33,6 +33,11 @@ label {
     color: lightsteelblue;
 }
 
+label .req {
+    margin: 2px;
+    color: #F7CA18;
+}
+
 input[type="text"],
 input[type="password"] {
     border: none;

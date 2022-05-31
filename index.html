@@ -39,7 +39,7 @@
                                 <a href="javascript:;">Smart <span>Phone</span></a>
                             </div>
                             <nav class="navbar">
-                                <ul class="navbar_menu">
+                                <ul class="navbar_menu topnav" id="myTopnav">
                                     <li><a href="javascript:;">Samsung</a></li>
                                     <li><a href="javascript:;">Iphone</a></li>
                                     <li><a href="javascript:;">Oppo</a></li>
@@ -49,697 +49,668 @@
                                     <li>
                                         <!-- <a class="search" href="javascript:;"><i class="fa fa-search" arial-hidden="true"></i
                       ></a> -->
-                                        <form role="search" method="get" class="search-form" action="">
+                                        <form role="search" method="get" class="search-form" action="search.html">
                                             <label>
-                      
-                          <input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:" />
-                        </label>
+
+                        <input type="search" class="search-field" placeholder="Search …" value="" name="s"
+                          title="Search for:" />
+                      </label>
                                             <input type="submit" class="search-submit" value="Search" />
                                         </form>
                                     </li>
                                     <li>
-                                        <a href="javascript:;"><i class="fa fa-user" arial-hidden="true"></i
-                      ></a>
+                                        <a href="login.html" target="_blank"><i class="fa fa-user" arial-hidden="true"></i></a>
                                     </li>
                                     <li class="checkout" data-toggle="modal" data-target="#cartModal">
                                         <a type="button" href="#" data-toggle="modal" data-target="#staticBackdrop">
                                             <i class="fa fa-shopping-cart" arial-hidden="true"></i>
-                                            <span id="checkout_items" class="checkout_items">0</span
-                        >
-                      </a>
-                    </li>
-                  </ul>
-                  <!-- <div class="hamburger_container">
-                      <i class="fa fa-bars" aria-hidden="true"></i>
-                  </div> --> 
-                           </nav>
+                                            <span id="checkout_items" class="checkout_items">0</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!--Start Toggle menu -->
+                                <!-- <a href="javascript:void(0);" class="hamburger_container icon" onclick="myFunction()">
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                </a> -->
+                                <div class="hamburger_container">
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                </div>
+                                <!--End Toggle menu -->
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
-    </div>
-    <!-- How to add shoping cart -->
-    <div class="container shopping-cart">
-        <!-- <button type="button" class="btn btn-success" data-toggle="modal" data-target="#cartModal">
+            <!-- How to add shoping cart -->
+            <div class="container shopping-cart">
+                <!-- <button type="button" class="btn btn-success" data-toggle="modal" data-target="#cartModal">
       View Cart
     </button>  
   </div>
    -->
-    </div>
-    <!-- End shopping cart -->
-    </header>
-    <!-- <div class="fs_menu_overlay"></div>
-    <div class="hamburger_menu">
-        <div class="hamburger_close">
-            <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <!-- End shopping cart -->
+        </header>
+        <div class="fs_menu_overlay"></div>
+        <div class="hamburger_menu">
+            <div class="hamburger_close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div class="hamburger_menu_content text-right">
+                <ul class="menu_top_nav">
+                    <li class="menu_item"><a href="javascript:;">Home</a></li>
+                    <li class="menu_item"><a href="javascript:;">SamSung</a></li>
+                    <li class="menu_item"><a href="javascript:;">Iphone</a></li>
+                    <li class="menu_item"><a href="javascript:;">Oppo</a></li>
+                    <li class="menu_item"><a href="javascript:;">About</a></li>
+                    <li class="menu_item"><a href="javascript:;">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="hamburger_menu_content text-right">
-            <ul class="menu_top_nav">
-                <li class="menu_item"><a href="javascript:;">Home</a></li>
-                <li class="menu_item"><a href="javascript:;">SamSung</a></li>
-                <li class="menu_item"><a href="javascript:;">Iphone</a></li>
-                <li class="menu_item"><a href="javascript:;">Oppo</a></li>
-                <li class="menu_item"><a href="javascript:;">About</a></li>
-                <li class="menu_item"><a href="javascript:;">Contact</a></li>
-            </ul>
-        </div>
-    </div> -->
-    <!-- Header End -->
+        <!-- Header End -->
 
-    <!-- Slider -->
-    <div class="main_slider" style="background-image: url(images/slide_01.jpg)">
-        <div class="container fill_hight">
-            <div class="row align-items-center fill_hight">
-                <div class="col">
-                    <div class="main_slider_content">
-                        <h6>Sping/ Summer Collection 2022</h6>
-                        <h1>Get up to 30% Off New Arrivals</h1>
-                        <div class="red_button shop_now_button">
-                            <a href="javascript:;">Shop now</a>
+        <!-- Slider -->
+        <div class="main_slider" style="background-image: url(images/slide_01.jpg)">
+            <div class="container fill_hight">
+                <div class="row align-items-center fill_hight">
+                    <div class="col">
+                        <div class="main_slider_content">
+                            <h6>Sping/ Summer Collection 2022</h6>
+                            <h1>Get up to 30% Off New Arrivals</h1>
+                            <div class="red_button shop_now_button">
+                                <a href="javascript:;">Shop now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Slider End -->
+        <!-- Slider End -->
 
-    <!-- Banner Starts Here -->
-    <div class="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="banner_item align-item-center" style="
+        <!-- Banner Starts Here -->
+        <div class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="banner_item align-item-center" style="
                   background-image: url(images/samsung-galaxy-a03-xanh-thumb-600x600.jpg);
                 ">
-                        <div class="banner_category">
-                            <a href="javascript:;">Samsung</a>
+                            <div class="banner_category">
+                                <a href="javascript:;">Samsung</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="banner_item align-item-center" style="
+                    <div class="col-md-4">
+                        <div class="banner_item align-item-center" style="
                   background-image: url(images/iphone-12-mini-trang-15-600x600.jpg);
                 ">
-                        <div class="banner_category">
-                            <a href="javascript:;">Iphone</a>
+                            <div class="banner_category">
+                                <a href="javascript:;">Iphone</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="banner_item align-item-center" style="
+                    <div class="col-md-4">
+                        <div class="banner_item align-item-center" style="
                   background-image: url(images/oppo-find-x5-pro-den-thumb-600x600.jpg);
                 ">
-                        <div class="banner_category">
-                            <a href="javascript:;">Oppo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Banner Ends Here -->
-
-    <!-- New Arrivals -->
-    <div class="new_arrivals">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center">
-                    <div class="section_title new_arrivals_title">
-                        <h2>New Arrivals</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col text-center">
-                    <div class="new_arrivals_sorting">
-                        <ul class="arrivals_grid_sorting clearfix button-group filters-button-group">
-                            <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center active is-checked" data-filter="*">
-                                all
-                            </li>
-                            <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".samsung">
-                                Samsung
-                            </li>
-                            <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".iphone">
-                                Iphone
-                            </li>
-                            <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".oppo">
-                                Oppo
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="product-grid">
-                <!-- data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows"}' -->
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-xl-3 product-item samsung" data-name="samsung" data-id="1">
-                        <div class="product discount product_filter">
-                            <div class="product_image">
-                                <img src="images/iphone-13-xanh-la-thumb-new-600x600.jpg" alt="" />
+                            <div class="banner_category">
+                                <a href="javascript:;">Oppo</a>
                             </div>
-                            <div class="favorite favorite_left"></div>
-                            <div class="product_bubble product_bubble_right product_bubble_green d-flex flex-column justify-content-center align-items-center">
-                                <span>-$ 20</span>
-                        </div>
-                        <div class="product_info">
-                            <h6 class="product_name">
-                                <a href="javascript:;">Samsung</a>
-                            </h6>
-                            <div class="product_price">$ 200</div>
-                        </div>
-                    </div>
-                    <div class="red_button add_to_cart_button">
-                        <a class="addToCard" data-id="1" href="#">Add to card</a
-                  >
-                </div>
-              </div>
-
-              <div
-                class="col-lg-3 col-md-3 col-xl-3 product-item iphone"
-                data-id="2" data-name="iphone"
-              >
-                <div class="product discount product_filter">
-                  <div class="product_image">
-                    <img
-                      src="images/oppo-reno7-z-5g-thumb-1-1-600x600.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="favorite favorite_left"></div>
-                  <div
-                    class="product_bubble product_bubble_right product_bubble_green d-flex flex-column justify-content-center align-items-center"
-                  >
-                    <span>-$ 20</span>
-                  </div>
-                  <div class="product_info">
-                    <h6 class="product_name">
-                      <a href="javascript:;">Samsung</a>
-                        </h6>
-                        <div class="product_price">$ 200</div>
-                    </div>
-                </div>
-                <div class="red_button add_to_cart_button">
-                    <a class="addToCard" data-id="2" href="#">Add to card</a
-                  >
-                </div>
-              </div>
-
-              <div
-                class="col-lg-3 col-md-3 col-xl-3 product-item oppo"
-                data-id="3" data-name="oppo"
-              >
-                <div class="product discount product_filter">
-                  <div class="product_image">
-                    <img
-                      src="images/iphone-12-mini-trang-15-600x600.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="favorite favorite_left"></div>
-                  <div
-                    class="product_bubble product_bubble_right product_bubble_green d-flex flex-column justify-content-center align-items-center"
-                  >
-                    <span>-$ 20</span>
-                  </div>
-                  <div class="product_info">
-                    <h6 class="product_name">
-                      <a href="javascript:;">Samsung</a>
-                    </h6>
-                    <div class="product_price">$ 200</div>
-                </div>
-            </div>
-            <div class="red_button add_to_cart_button">
-                <a class="addToCard" data-id="3" href="#">Add to card</a
-                  >
-                </div>
-              </div>
-
-              <div
-                class="col-lg-3 col-md-3 col-xl-3 product-item samsung"
-                data-id="4" data-name="samsung"
-              >
-                <div class="product discount product_filter">
-                  <div class="product_image">
-                    <img
-                      src="images/samsung-galaxy-z-flip-3-cream-1-600x600.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="favorite favorite_left"></div>
-                  <div
-                    class="product_bubble product_bubble_right product_bubble_green d-flex flex-column justify-content-center align-items-center"
-                  >
-                    <span>-$ 20</span>
-                  </div>
-                  <div class="product_info">
-                    <h6 class="product_name">
-                      <a href="javascript:;">Samsung</a>
-                </h6>
-                <div class="product_price">$ 200</div>
-            </div>
-    </div>
-    <div class="red_button add_to_cart_button">
-        <a class="addToCard" data-id="4" href="#">Add to card</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row btn-show-item">
-            <!-- Load More Button -->
-            <button id="loadMore">Load More...</button>
-            <!--showLess  -->
-            <button id="showLess">Show Less...</button>
-          </div>
-        </div>
-      </div>
-      <!-- New Arrivals End -->
-
-      <!-- Best Sellers -->
-      <div class="best_sellers">
-        <div class="container">
-          <div class="row">
-            <div class="col text-center">
-              <div class="section_title new_arrivals_title">
-                <h2>Best Sellers</h2>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="product_slider_container">
-                <div class="owl-carousel ow-theme product_slider">
-                  <!-- slider 1 -->
-                  <div class="owl-item product_slider_item">
-                    <div class="product-item samsung">
-                      <div class="product discount product_filter">
-                        <div class="product_image">
-                          <img
-                            src="images/samsung-galaxy-a52s-5g-mint-600x600.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="favorite favorite_left"></div>
-                        <div
-                          class="product_bubble product_bubble_right product_bubble_red d-flex flex-column justify-content-center align-items-center"
-                        >
-                          <span>-$ 20</span>
-                        </div>
-                        <div class="product_info">
-                          <h6 class="product_name">
-                            <a href="javascript:;">Samsung</a>
-        </h6>
-        <div class="product_price">$ 200</div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <!-- slider 2 -->
-    <div class="owl-item product_slider_item">
-        <div class="product-item samsung">
-            <div class="product discount product_filter">
-                <div class="product_image">
-                    <img src="images/Galaxy-S22-Ultra-Burgundy-600x600.jpg" alt="" />
-                </div>
-                <div class="favorite favorite_left"></div>
-                <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column justify-content-center align-items-center">
-                    <span>-$ 20</span>
-                </div>
-                <div class="product_info">
-                    <h6 class="product_name">
-                        <a href="javascript:;">Samsung</a>
-                    </h6>
-                    <div class="product_price">$ 200</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- slider 3 -->
-    <div class="owl-item product_slider_item">
-        <div class="product-item samsung">
-            <div class="product discount product_filter">
-                <div class="product_image">
-                    <img src="images/samsung-galaxy-a52s-5g-mint-600x600.jpg" alt="" />
-                </div>
-                <div class="favorite favorite_left"></div>
-                <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column justify-content-center align-items-center">
-                    <span>-$ 20</span>
-                </div>
-                <div class="product_info">
-                    <h6 class="product_name">
-                        <a href="javascript:;">Samsung</a>
-                    </h6>
-                    <div class="product_price">$ 200</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- slider 1 -->
-    <div class="owl-item product_slider_item">
-        <div class="product-item samsung">
-            <div class="product discount product_filter">
-                <div class="product_image">
-                    <img src="images/iphone-xr-128gb-600x600.jpg" alt="" />
-                </div>
-                <div class="favorite favorite_left"></div>
-                <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column justify-content-center align-items-center">
-                    <span>-$ 20</span>
-                </div>
-                <div class="product_info">
-                    <h6 class="product_name">
-                        <a href="javascript:;">Samsung</a>
-                    </h6>
-                    <div class="product_price">$ 200</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- slider 2 -->
-    <div class="owl-item product_slider_item">
-        <div class="product-item samsung">
-            <div class="product discount product_filter">
-                <div class="product_image">
-                    <img src="images/oppo-reno7-z-5g-thumb-1-1-600x600.jpg" alt="" />
-                </div>
-                <div class="favorite favorite_left"></div>
-                <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column justify-content-center align-items-center">
-                    <span>-$ 20</span>
-                </div>
-                <div class="product_info">
-                    <h6 class="product_name">
-                        <a href="javascript:;">Samsung</a>
-                    </h6>
-                    <div class="product_price">$ 200</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- slider 3 -->
-    <div class="owl-item product_slider_item">
-        <div class="product-item samsung">
-            <div class="product discount product_filter">
-                <div class="product_image">
-                    <img src="images/samsung-galaxy-a52s-5g-mint-600x600.jpg" alt="" />
-                </div>
-                <div class="favorite favorite_left"></div>
-                <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column justify-content-center align-items-center">
-                    <span>-$ 20</span>
-                </div>
-                <div class="product_info">
-                    <h6 class="product_name">
-                        <a href="javascript:;">Samsung</a>
-                    </h6>
-                    <div class="product_price">$ 200</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- slider 1 -->
-    <div class="owl-item product_slider_item">
-        <div class="product-item samsung">
-            <div class="product discount product_filter">
-                <div class="product_image">
-                    <img src="images/iphone-13-xanh-la-thumb-new-600x600.jpg" alt="" />
-                </div>
-                <div class="favorite favorite_left"></div>
-                <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column justify-content-center align-items-center">
-                    <span>-$ 20</span>
-                </div>
-                <div class="product_info">
-                    <h6 class="product_name">
-                        <a href="javascript:;">Samsung</a>
-                    </h6>
-                    <div class="product_price">$ 200</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- slider 2 -->
-    <div class="owl-item product_slider_item">
-        <div class="product-item samsung">
-            <div class="product discount product_filter">
-                <div class="product_image">
-                    <img src="images/samsung-galaxy-a52s-5g-mint-600x600.jpg" alt="" />
-                </div>
-                <div class="favorite favorite_left"></div>
-                <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column justify-content-center align-items-center">
-                    <span>-$ 20</span>
-                </div>
-                <div class="product_info">
-                    <h6 class="product_name">
-                        <a href="javascript:;">Samsung</a>
-                    </h6>
-                    <div class="product_price">$ 200</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- slider 3 -->
-    <div class="owl-item product_slider_item">
-        <div class="product-item samsung">
-            <div class="product discount product_filter">
-                <div class="product_image">
-                    <img src="images/samsung-galaxy-a52s-5g-mint-600x600.jpg" alt="" />
-                </div>
-                <div class="favorite favorite_left"></div>
-                <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column justify-content-center align-items-center">
-                    <span>-$ 20</span>
-                </div>
-                <div class="product_info">
-                    <h6 class="product_name">
-                        <a href="javascript:;">Samsung</a>
-                    </h6>
-                    <div class="product_price">$ 200</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <!-- Slider navigation -->
-    <div class="product_slider_nav_left product_slider_nav d-flex align-items-center justify-content-center">
-        <i class="fa fa-chevron-left" aria-hidden="true"></i>
-    </div>
-    <!-- Slider navigation -->
-    <div class="product_slider_nav_right product_slider_nav d-flex align-items-center justify-content-center">
-        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <!-- Best Sellers End -->
-
-    <!-- Latest Product -->
-
-    <!-- End Latest Product -->
-
-    <!-- About -->
-
-    <!--End About -->
-    <!-- Call TO Action -->
-
-    <!--End Call TO Action -->
-    <!-- Footer -->
-    <div class="benefit">
-        <div class="container">
-            <div class="row benefit_row">
-                <div class="col-lg-3 benefit_col">
-                    <div class="benefit_item d-flex flex-row align-items-center">
-                        <div class="benefit_icon">
-                            <i class="fa fa-truck" aria-hidden="true"></i>
-                        </div>
-                        <div class="benefit_content">
-                            <h6>Free Shipping</h6>
-                            <p>Suffered Alterration is Some Form</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 benefit_col">
-                    <div class="benefit_item d-flex flex-row align-items-center">
-                        <div class="benefit_icon">
-                            <i class="fa fa-truck" aria-hidden="true"></i>
-                        </div>
-                        <div class="benefit_content">
-                            <h6>Free Shipping</h6>
-                            <p>Suffered Alterration is Some Form</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 benefit_col">
-                    <div class="benefit_item d-flex flex-row align-items-center">
-                        <div class="benefit_icon">
-                            <i class="fa fa-truck" aria-hidden="true"></i>
-                        </div>
-                        <div class="benefit_content">
-                            <h6>Free Shipping</h6>
-                            <p>Suffered Alterration is Some Form</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 benefit_col">
-                    <div class="benefit_item d-flex flex-row align-items-center">
-                        <div class="benefit_icon">
-                            <i class="fa fa-truck" aria-hidden="true"></i>
-                        </div>
-                        <div class="benefit_content">
-                            <h6>Free Shipping</h6>
-                            <p>Suffered Alterration is Some Form</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- Banner Ends Here -->
 
-    <footer>
-        <div class="footer" id="footer">
+        <!-- New Arrivals -->
+        <div class="new_arrivals">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                        <h3>Iphone</h3>
-                        <ul>
-                            <li><a class="text-product" href="javascript:;"> Iphone 6 </a></li>
-                            <li><a class="text-product" href="javascript:;"> Iphone 7 </a></li>
-                            <li><a class="text-product" href="javascript:;"> Iphone 8 </a></li>
-                            <li><a class="text-product" href="javascript:;"> Iphone 12 </a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                        <h3>Sam Sung</h3>
-                        <ul>
-                            <li><a class="text-product" href="javascript:;"> Sam Sung Galaxy </a></li>
-                            <li><a class="text-product" href="javascript:;"> Sam Sung Galaxy S22  </a></li>
-                            <li><a class="text-product" href="javascript:;"> Sam Sung Galaxy Z </a></li>
-                            <li><a class="text-product" href="javascript:;"> Sam Sung Galaxy A21 </a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-                        <h3>Oppo</h3>
-                        <ul>
-                            <li><a class="text-product" href="javascript:;"> Oppo Zend 5 </a></li>
-                            <li><a class="text-product" href="javascript:;"> Oppo Reno4 </a></li>
-                            <li><a class="text-product" href="javascript:;"> Oppo X5 </a></li>
-                            <li><a class="text-product" href="javascript:;"> Oppo Reno7 </a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 contact">
-                        <h3>Contact Us</h3>
-                        <li>
-                            <a href="javascript:;"> <i class='fas fa-address-card'></i> Phú An, Phú Vang, TT Huế</a>
-                        </li>
-                        <li>
-                            <a href="javascript:;"> <i class='fas fa-phone'></i> +84 37 9731 767 </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;"> <i class='fas fa-mail-bulk'></i>xuanphi7895@gmail.com </a>
-                        </li>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <h3>Suscribe Us</h3>
-                        <ul>
-                            <li>
-                                <div class="input-append newsletter-box text-center">
-                                    <input type="text" class="full text-center" placeholder="Email " />
-                                    <button class="btn bg-gray" type="button">
-                                      Follow us <i class="fa fa-long-arrow-right"> </i>
-                      </button>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="social">
-                            <li>
-                                <a href="javascript:;"> <i class="fa fa-facebook"> </i> </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;"> <i class="fa fa-twitter"> </i> </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <i class="fa fa-google-plus"> </i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <i class="fa fa-pinterest"> </i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;"> <i class="fa fa-youtube"> </i> </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="footer-bottom">
-            <div class="container">
-                <p class="pull-left">
-                    Copyright © 2022. <a href="SmartPhone.com">SmartPhone.com</a>
-                </p>
-                <div class="pull-right">
-                    <ul class="nav nav-pills payments">
-                        <li><i class="fa fa-cc-visa"></i></li>
-                        <li><i class="fa fa-cc-mastercard"></i></li>
-                        <li><i class="fa fa-cc-amex"></i></li>
-                        <li><i class="fa fa-cc-paypal"></i></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-    </footer>
-
-
-    <!-- End Footer -->
-    <!-- Button trigger modal -->
-
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header border-bottom-0">
-                        <h5 class="modal-title" id="exampleModalLabel">
-                            Your Shopping Cart
-                        </h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                    </div>
-                    <div class="modal-body">
-                        <table class="table table-image">
-                            <thead>
-                                <tr>
-                                    <th scope="col"></th>
-                                    <th scope="col">Product</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Qty</th>
-                                    <th scope="col">Total</th>
-                                    <th scope="col">Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody class="show-list-product"></tbody>
-                        </table>
-                        <div class="d-flex justify-content-end">
-                            <h5>Total: <span class="price text-success"></span></h5>
+                    <div class="col text-center">
+                        <div class="section_title new_arrivals_title">
+                            <h2>New Arrivals</h2>
                         </div>
                     </div>
-                    <div class="modal-footer border-top-0 d-flex justify-content-between">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                  Close
-                </button>
-                        <button type="button" class="btn btn-success">Checkout</button>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col text-center">
+                        <div class="new_arrivals_sorting">
+                            <ul class="arrivals_grid_sorting clearfix button-group filters-button-group">
+                                <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center active is-checked" data-filter="*">
+                                    all
+                                </li>
+                                <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".samsung">
+                                    Samsung
+                                </li>
+                                <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".iphone">
+                                    Iphone
+                                </li>
+                                <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".oppo">
+                                    Oppo
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-grid">
+                    <!-- data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows"}' -->
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-xl-3 product-item samsung" data-name="samsung" data-id="1">
+                            <div class="product discount product_filter">
+                                <div class="product_image">
+                                    <img src="images/iphone-13-xanh-la-thumb-new-600x600.jpg" alt="" />
+                                </div>
+                                <div class="favorite favorite_left"></div>
+                                <div class="product_bubble product_bubble_right product_bubble_green d-flex flex-column justify-content-center align-items-center">
+                                    <span>-$ 20</span>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_name">
+                                        <a href="javascript:;">Samsung</a>
+                                    </h6>
+                                    <div class="product_price">$ 200</div>
+                                </div>
+                            </div>
+                            <div class="red_button add_to_cart_button">
+                                <a class="addToCard" data-id="1" href="#">Add to card</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-xl-3 product-item iphone" data-id="2" data-name="iphone">
+                            <div class="product discount product_filter">
+                                <div class="product_image">
+                                    <img src="images/oppo-reno7-z-5g-thumb-1-1-600x600.jpg" alt="" />
+                                </div>
+                                <div class="favorite favorite_left"></div>
+                                <div class="product_bubble product_bubble_right product_bubble_green d-flex flex-column justify-content-center align-items-center">
+                                    <span>-$ 20</span>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_name">
+                                        <a href="javascript:;">Samsung</a>
+                                    </h6>
+                                    <div class="product_price">$ 200</div>
+                                </div>
+                            </div>
+                            <div class="red_button add_to_cart_button">
+                                <a class="addToCard" data-id="2" href="#">Add to card</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-xl-3 product-item oppo" data-id="3" data-name="oppo">
+                            <div class="product discount product_filter">
+                                <div class="product_image">
+                                    <img src="images/iphone-12-mini-trang-15-600x600.jpg" alt="" />
+                                </div>
+                                <div class="favorite favorite_left"></div>
+                                <div class="product_bubble product_bubble_right product_bubble_green d-flex flex-column justify-content-center align-items-center">
+                                    <span>-$ 20</span>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_name">
+                                        <a href="javascript:;">Samsung</a>
+                                    </h6>
+                                    <div class="product_price">$ 200</div>
+                                </div>
+                            </div>
+                            <div class="red_button add_to_cart_button">
+                                <a class="addToCard" data-id="3" href="#">Add to card</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-xl-3 product-item samsung" data-id="4" data-name="samsung">
+                            <div class="product discount product_filter">
+                                <div class="product_image">
+                                    <img src="images/samsung-galaxy-z-flip-3-cream-1-600x600.jpg" alt="" />
+                                </div>
+                                <div class="favorite favorite_left"></div>
+                                <div class="product_bubble product_bubble_right product_bubble_green d-flex flex-column justify-content-center align-items-center">
+                                    <span>-$ 20</span>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_name">
+                                        <a href="javascript:;">Samsung</a>
+                                    </h6>
+                                    <div class="product_price">$ 200</div>
+                                </div>
+                            </div>
+                            <div class="red_button add_to_cart_button">
+                                <a class="addToCard" data-id="4" href="#">Add to card</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row btn-show-item">
+                    <!-- Load More Button -->
+                    <button id="loadMore">Load More...</button>
+                    <!--showLess  -->
+                    <button id="showLess">Show Less...</button>
+                </div>
+            </div>
+        </div>
+        <!-- New Arrivals End -->
+
+        <!-- Best Sellers -->
+        <div class="best_sellers">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <div class="section_title new_arrivals_title">
+                            <h2>Best Sellers</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="product_slider_container">
+                            <div class="owl-carousel ow-theme product_slider">
+                                <!-- slider 1 -->
+                                <div class="owl-item product_slider_item">
+                                    <div class="product-item samsung">
+                                        <div class="product discount product_filter">
+                                            <div class="product_image">
+                                                <img src="images/samsung-galaxy-a52s-5g-mint-600x600.jpg" alt="" />
+                                            </div>
+                                            <div class="favorite favorite_left"></div>
+                                            <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column justify-content-center align-items-center">
+                                                <span>-$ 20</span>
+                                            </div>
+                                            <div class="product_info">
+                                                <h6 class="product_name">
+                                                    <a href="javascript:;">Samsung</a>
+                                                </h6>
+                                                <div class="product_price">$ 200</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- slider 2 -->
+                                <div class="owl-item product_slider_item">
+                                    <div class="product-item samsung">
+                                        <div class="product discount product_filter">
+                                            <div class="product_image">
+                                                <img src="images/Galaxy-S22-Ultra-Burgundy-600x600.jpg" alt="" />
+                                            </div>
+                                            <div class="favorite favorite_left"></div>
+                                            <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column justify-content-center align-items-center">
+                                                <span>-$ 20</span>
+                                            </div>
+                                            <div class="product_info">
+                                                <h6 class="product_name">
+                                                    <a href="javascript:;">Samsung</a>
+                                                </h6>
+                                                <div class="product_price">$ 200</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- slider 3 -->
+                                <div class="owl-item product_slider_item">
+                                    <div class="product-item samsung">
+                                        <div class="product discount product_filter">
+                                            <div class="product_image">
+                                                <img src="images/samsung-galaxy-a52s-5g-mint-600x600.jpg" alt="" />
+                                            </div>
+                                            <div class="favorite favorite_left"></div>
+                                            <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column justify-content-center align-items-center">
+                                                <span>-$ 20</span>
+                                            </div>
+                                            <div class="product_info">
+                                                <h6 class="product_name">
+                                                    <a href="javascript:;">Samsung</a>
+                                                </h6>
+                                                <div class="product_price">$ 200</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- slider 1 -->
+                                <div class="owl-item product_slider_item">
+                                    <div class="product-item samsung">
+                                        <div class="product discount product_filter">
+                                            <div class="product_image">
+                                                <img src="images/iphone-xr-128gb-600x600.jpg" alt="" />
+                                            </div>
+                                            <div class="favorite favorite_left"></div>
+                                            <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column justify-content-center align-items-center">
+                                                <span>-$ 20</span>
+                                            </div>
+                                            <div class="product_info">
+                                                <h6 class="product_name">
+                                                    <a href="javascript:;">Samsung</a>
+                                                </h6>
+                                                <div class="product_price">$ 200</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- slider 2 -->
+                                <div class="owl-item product_slider_item">
+                                    <div class="product-item samsung">
+                                        <div class="product discount product_filter">
+                                            <div class="product_image">
+                                                <img src="images/oppo-reno7-z-5g-thumb-1-1-600x600.jpg" alt="" />
+                                            </div>
+                                            <div class="favorite favorite_left"></div>
+                                            <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column justify-content-center align-items-center">
+                                                <span>-$ 20</span>
+                                            </div>
+                                            <div class="product_info">
+                                                <h6 class="product_name">
+                                                    <a href="javascript:;">Samsung</a>
+                                                </h6>
+                                                <div class="product_price">$ 200</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- slider 3 -->
+                                <div class="owl-item product_slider_item">
+                                    <div class="product-item samsung">
+                                        <div class="product discount product_filter">
+                                            <div class="product_image">
+                                                <img src="images/samsung-galaxy-a52s-5g-mint-600x600.jpg" alt="" />
+                                            </div>
+                                            <div class="favorite favorite_left"></div>
+                                            <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column justify-content-center align-items-center">
+                                                <span>-$ 20</span>
+                                            </div>
+                                            <div class="product_info">
+                                                <h6 class="product_name">
+                                                    <a href="javascript:;">Samsung</a>
+                                                </h6>
+                                                <div class="product_price">$ 200</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- slider 1 -->
+                                <div class="owl-item product_slider_item">
+                                    <div class="product-item samsung">
+                                        <div class="product discount product_filter">
+                                            <div class="product_image">
+                                                <img src="images/iphone-13-xanh-la-thumb-new-600x600.jpg" alt="" />
+                                            </div>
+                                            <div class="favorite favorite_left"></div>
+                                            <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column justify-content-center align-items-center">
+                                                <span>-$ 20</span>
+                                            </div>
+                                            <div class="product_info">
+                                                <h6 class="product_name">
+                                                    <a href="javascript:;">Samsung</a>
+                                                </h6>
+                                                <div class="product_price">$ 200</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- slider 2 -->
+                                <div class="owl-item product_slider_item">
+                                    <div class="product-item samsung">
+                                        <div class="product discount product_filter">
+                                            <div class="product_image">
+                                                <img src="images/samsung-galaxy-a52s-5g-mint-600x600.jpg" alt="" />
+                                            </div>
+                                            <div class="favorite favorite_left"></div>
+                                            <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column justify-content-center align-items-center">
+                                                <span>-$ 20</span>
+                                            </div>
+                                            <div class="product_info">
+                                                <h6 class="product_name">
+                                                    <a href="javascript:;">Samsung</a>
+                                                </h6>
+                                                <div class="product_price">$ 200</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- slider 3 -->
+                                <div class="owl-item product_slider_item">
+                                    <div class="product-item samsung">
+                                        <div class="product discount product_filter">
+                                            <div class="product_image">
+                                                <img src="images/samsung-galaxy-a52s-5g-mint-600x600.jpg" alt="" />
+                                            </div>
+                                            <div class="favorite favorite_left"></div>
+                                            <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column justify-content-center align-items-center">
+                                                <span>-$ 20</span>
+                                            </div>
+                                            <div class="product_info">
+                                                <h6 class="product_name">
+                                                    <a href="javascript:;">Samsung</a>
+                                                </h6>
+                                                <div class="product_price">$ 200</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slider navigation -->
+                            <div class="product_slider_nav_left product_slider_nav d-flex align-items-center justify-content-center">
+                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                            </div>
+                            <!-- Slider navigation -->
+                            <div class="product_slider_nav_right product_slider_nav d-flex align-items-center justify-content-center">
+                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- Best Sellers End -->
+
+        <!-- Latest Product -->
+
+        <!-- End Latest Product -->
+
+        <!-- About -->
+
+        <!--End About -->
+        <!-- Call TO Action -->
+
+        <!--End Call TO Action -->
+        <!-- Footer -->
+        <div class="benefit">
+            <div class="container">
+                <div class="row benefit_row">
+                    <div class="col-lg-3 benefit_col">
+                        <div class="benefit_item d-flex flex-row align-items-center">
+                            <div class="benefit_icon">
+                                <i class="fa fa-truck" aria-hidden="true"></i>
+                            </div>
+                            <div class="benefit_content">
+                                <h6>Free Shipping</h6>
+                                <p>Suffered Alterration is Some Form</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 benefit_col">
+                        <div class="benefit_item d-flex flex-row align-items-center">
+                            <div class="benefit_icon">
+                                <i class="fa fa-truck" aria-hidden="true"></i>
+                            </div>
+                            <div class="benefit_content">
+                                <h6>Free Shipping</h6>
+                                <p>Suffered Alterration is Some Form</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 benefit_col">
+                        <div class="benefit_item d-flex flex-row align-items-center">
+                            <div class="benefit_icon">
+                                <i class="fa fa-truck" aria-hidden="true"></i>
+                            </div>
+                            <div class="benefit_content">
+                                <h6>Free Shipping</h6>
+                                <p>Suffered Alterration is Some Form</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 benefit_col">
+                        <div class="benefit_item d-flex flex-row align-items-center">
+                            <div class="benefit_icon">
+                                <i class="fa fa-truck" aria-hidden="true"></i>
+                            </div>
+                            <div class="benefit_content">
+                                <h6>Free Shipping</h6>
+                                <p>Suffered Alterration is Some Form</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer" id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                            <h3>Iphone</h3>
+                            <ul>
+                                <li><a class="text-product" href="javascript:;"> Iphone 6 </a></li>
+                                <li><a class="text-product" href="javascript:;"> Iphone 7 </a></li>
+                                <li><a class="text-product" href="javascript:;"> Iphone 8 </a></li>
+                                <li><a class="text-product" href="javascript:;"> Iphone 12 </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                            <h3>Sam Sung</h3>
+                            <ul>
+                                <li><a class="text-product" href="javascript:;"> Sam Sung Galaxy </a></li>
+                                <li><a class="text-product" href="javascript:;"> Sam Sung Galaxy S22 </a></li>
+                                <li><a class="text-product" href="javascript:;"> Sam Sung Galaxy Z </a></li>
+                                <li><a class="text-product" href="javascript:;"> Sam Sung Galaxy A21 </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                            <h3>Oppo</h3>
+                            <ul>
+                                <li><a class="text-product" href="javascript:;"> Oppo Zend 5 </a></li>
+                                <li><a class="text-product" href="javascript:;"> Oppo Reno4 </a></li>
+                                <li><a class="text-product" href="javascript:;"> Oppo X5 </a></li>
+                                <li><a class="text-product" href="javascript:;"> Oppo Reno7 </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 contact">
+                            <h3>Contact Us</h3>
+                            <li>
+                                <a href="javascript:;"> <i class='fas fa-address-card'></i> Phú An, Phú Vang, TT Huế</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;"> <i class='fas fa-phone'></i> +84 37 9731 767 </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;"> <i class='fas fa-mail-bulk'></i>xuanphi7895@gmail.com </a>
+                            </li>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <h3>Suscribe Us</h3>
+                            <ul>
+                                <li>
+                                    <div class="input-append newsletter-box text-center">
+                                        <input type="text" class="full text-center" placeholder="Email " />
+                                        <button class="btn bg-gray" type="button">
+                      Follow us <i class="fa fa-long-arrow-right"> </i>
+                    </button>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="social">
+                                <li>
+                                    <a href="javascript:;"> <i class="fa fa-facebook"> </i> </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;"> <i class="fa fa-twitter"> </i> </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-google-plus"> </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-pinterest"> </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;"> <i class="fa fa-youtube"> </i> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- fotter bottom -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="pull-left">
+                        Copyright © 2022. <a href="SmartPhone.com">SmartPhone.com</a>
+                    </p>
+                    <div class="pull-right">
+                        <ul class="nav nav-pills payments">
+                            <li><i class="fa fa-cc-visa"></i></li>
+                            <li><i class="fa fa-cc-mastercard"></i></li>
+                            <li><i class="fa fa-cc-amex"></i></li>
+                            <li><i class="fa fa-cc-paypal"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+        <!-- End Footer -->
+        <!-- Button trigger modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header border-bottom-0">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                Your Shopping Cart
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table table-image">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Product</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Qty</th>
+                                        <th scope="col">Total</th>
+                                        <th scope="col">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="show-list-product"></tbody>
+                            </table>
+                            <div class="d-flex justify-content-end">
+                                <h5>Total: <span class="price text-success"></span></h5>
+                            </div>
+                        </div>
+                        <div class="modal-footer border-top-0 d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                Close
+              </button>
+                            <button type="button" class="btn btn-success">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -757,18 +728,109 @@
     <!-- <script src="assets/js/accordions.js"></script> -->
     <script>
         //on search form submit
-        $("#search-form").submit(function(e) {
-            e.preventDefault();
-            var query = $("#search-form input").val().toLowerCase();
+        // $("#search-form").submit(function(e) {
+        //     e.preventDefault();
+        //     if (e.keyCode === 13) {
+        //         alert(e.keyCode);
+        //     }
 
-            $(".product-item").each(function() {
-                var name = $(this).data("name").toLowerCase();
-                console.log(name);
+        //     // var query = $("#search-form input").val().toLowerCase();
+        //     // debugger;
+        //     // console.log(query);
+        //     // $(".product-item").each(function() {
+        //     //     var name = $(this).data("name").toLowerCase();
+        //     //     console.log(name);
 
-                // if (name.indexOf(query) > -1) {
-                //     $(this).show();
-                // }
-            });
+        //     //     // if (name.indexOf(query) > -1) {
+        //     //     //     $(this).show();
+        //     //     // }
+        //     // });
+        //     // window.location.href = 'search.html';
+        // });
+
+        // function myFunction() {
+        //     var x = document.getElementById("myTopnav");
+        //     if (x.className === "topnav") {
+        //         x.className += " responsive";
+        //     } else {
+        //         x.className = "topnav";
+        //     }
+        // }
+        jQuery(document).ready(function($) {
+
+
+            var mainSlider = $('.main_slider');
+            var hamburger = $('.hamburger_container');
+            var menu = $('.hamburger_menu');
+            var menuActive = false;
+            var hamburgerClose = $('.hamburger_close');
+            var fsOverlay = $('.fs_menu_overlay');
+
+            initMenu();
+
+            function initMenu() {
+                // 1. 
+                if (hamburger.length) {
+                    hamburger.on('click', function() {
+                        if (!menuActive) {
+                            openMenu();
+                        }
+                    });
+                }
+                // 2
+                if (fsOverlay.length) {
+                    fsOverlay.on('click', function() {
+                        if (menuActive) {
+                            closeMenu();
+                        }
+                    });
+                }
+                // 3
+                console.log(hamburgerClose);
+                if (hamburgerClose.length) {
+                    hamburgerClose.on('click', function() {
+                        if (menuActive) {
+                            closeMenu();
+                        }
+                    });
+                }
+                // 4
+                if ($('.menu_item').length) {
+                    var items = document.getElementsByClassName('menu_item');
+                    // console.log(items);
+                    for (let i = 0; i < items.length; i++) {
+                        var has = items[i].classList.contains("has-children");
+                        console.log(has);
+                        if (items[i].classList.contains("has-children")) {
+                            items[i].onclick = function() {
+                                this.classList.toggle("active");
+                                var panel = this.children[1];
+                                if (panel.style.maxHeight) {
+                                    panel.style.maxHeight = null;
+                                } else {
+                                    panel.style.maxHeight = panel.scrollHeight + "px";
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+
+            function openMenu() {
+                console.log("Open menu");
+                menu.addClass('active');
+                fsOverlay.css('pointer-events', 'auto');
+                menuActive = true;
+                console.log("Open menu: menuActive", menuActive);
+            };
+
+            function closeMenu() {
+                console.log("Close menu");
+                menu.removeClass('active');
+                console.log(menuActive);
+                fsOverlay.css('pointer-events', 'none');
+                menuActive = false;
+            };
         });
     </script>
 </body>
