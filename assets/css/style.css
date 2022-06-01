@@ -1,4 +1,21 @@
 @charset "utf-8";
+
+/* Responsive */
+
+@media only screen and (max-width: 575px) {
+    .hamburger_menu {
+        right: -100%;
+        width: 100%;
+    }
+    .product-item {
+        width: 50%;
+        height: 420px;
+    }
+    .product {
+        height: 420px;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     h1 {
         font-size: 36px;
@@ -63,21 +80,27 @@
     }
 }
 
-@media only screen and (max-width: 575px) {
-    .hamburger_menu {
-        right: -100%;
-        width: 100%;
+@media only screen and (max-width: 992px) {
+    .navbar .navbar_menu {
+        display: none;
     }
-    .product-item {
-        width: 50%;
-        height: 420px;
-    }
-    .product {
-        height: 420px;
+    .hamburger_container {
+        display: block !important;
     }
 }
 
-@media only screen and (max-width: 1169px) {}
+@media only screen and (max-width: 1199px) {
+    .main_slider {
+        min-height: 475;
+        height: calc(100vw / 1.714)
+    }
+    .main_slider_content {
+        width: 80%
+    }
+    .banner_item {
+        height: 220px;
+    }
+}
 
 
 /* 1. Fonts */
@@ -825,6 +848,7 @@ h6 {
 /* Hamburger */
 
 .hamburger_container {
+    display: none;
     margin-left: 40px;
 }
 
@@ -851,8 +875,6 @@ h6 {
 
 .hamburger_menu.active {
     right: 0;
-    background-color: #2196f3;
-    display: block
 }
 
 .fs_menu_overlay {
@@ -865,22 +887,61 @@ h6 {
     z-index: 9;
     pointer-events: none;
     transition: all 200ms ease;
-    display: none;
 }
 
-
-/* .hamburger_close {
+.hamburger_close {
     position: absolute;
     top: 26px;
     right: 10px;
     padding: 10px;
     z-index: 1;
-} */
+}
 
 .hamburger_close i {
     font-size: 24px;
     color: #1e1e27;
     transition: all 300ms ease;
+}
+
+.hamburger_close i {
+    color: #b5aec4;
+}
+
+.hamburger_menu_content {
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    padding-right: 20px;
+}
+
+.menu_item {
+    display: block;
+    position: relative;
+    border-bottom: solid 1px #b5eac4;
+}
+
+.menu_item>a {
+    display: block;
+    color: #1e1e27;
+    font-weight: 500;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.menu_item>a:hover {
+    color: #b5aec4;
+}
+
+.menu_item>a>i {
+    margin-left: 8px;
+}
+
+.menu_item.active {
+    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 
