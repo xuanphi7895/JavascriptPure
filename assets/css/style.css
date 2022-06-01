@@ -543,13 +543,13 @@ h6 {
 }
 
 .new_arrivals_title {
-    margin-top: 74px;
+    margin-top: 34px;
 }
 
 .new_arrivals_sorting {
     display: inline-block;
     border-radius: 3px;
-    margin-top: 59px;
+    margin-top: 10px;
     overflow: visible;
 }
 
@@ -605,7 +605,7 @@ h6 {
 
 .product-item {
     width: 100%;
-    margin-top: 57px;
+    margin-top: 27px;
     /* padding-top: 30px; */
     height: 280px;
     cursor: pointer;
@@ -750,7 +750,9 @@ h6 {
 }
 
 .add_to_cart_button {
-    width: 100%;
+    width: 20%;
+    margin: 0 50%;
+    text-align: center;
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s ease;
@@ -813,7 +815,7 @@ h6 {
 .product_slider_container {
     width: 100%;
     height: 340px;
-    margin-top: 73px;
+    /* margin-top: 73px; */
 }
 
 .product_slider_container::after {

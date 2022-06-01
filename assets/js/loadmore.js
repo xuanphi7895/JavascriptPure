@@ -32,7 +32,7 @@ $(function() {
                         </div>
                     </div>
                     <div class="red_button add_to_cart_button">
-                        <a class="addToCard" data-id="1" href="javascript:;">Add to card</a>
+                        <a class="addToCard" data-id="1" href="javascript:;"><i class="fas fa-shopping-cart"></i></a>
                 </div>
               </div>
 
@@ -53,7 +53,7 @@ $(function() {
                     </div>
                 </div>
                 <div class="red_button add_to_cart_button">
-                    <a class="addToCard" data-id="2" href="javascript:;">Add to card</a>
+                    <a class="addToCard" data-id="2" href="javascript:;"><i class="fas fa-shopping-cart"></i></a>
                 </div>
               </div>
 
@@ -74,7 +74,7 @@ $(function() {
                 </div>
             </div>
             <div class="red_button add_to_cart_button">
-                <a class="addToCard" data-id="3" href="javascript:;">Add to card</a>
+                <a class="addToCard" data-id="3" href="javascript:;"><i class="fas fa-shopping-cart"></i></a>
                 </div>
               </div>
 
@@ -95,7 +95,7 @@ $(function() {
             </div>
     </div>
     <div class="red_button add_to_cart_button">
-        <a class="addToCard" data-id="4" href="javascript:;">Add to card</a>
+        <a class="addToCard" data-id="4" href="javascript:;"><i class="fas fa-shopping-cart"></i></a>
                 </div>
               </div>
 
