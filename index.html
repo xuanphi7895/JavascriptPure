@@ -47,8 +47,6 @@
                                 </ul>
                                 <ul class="navbar_user">
                                     <li>
-                                        <!-- <a class="search" href="javascript:;"><i class="fa fa-search" arial-hidden="true"></i
-                      ></a> -->
                                         <form role="search" method="get" class="search-form" action="search1.html">
                                             <label>
 
@@ -69,9 +67,6 @@
                                     </li>
                                 </ul>
                                 <!--Start Toggle menu -->
-                                <!-- <a href="javascript:void(0);" class="hamburger_container icon" onclick="myFunction()">
-                                    <i class="fa fa-bars" aria-hidden="true"></i>
-                                </a> -->
                                 <div class="hamburger_container">
                                     <i class="fa fa-bars" aria-hidden="true"></i>
                                 </div>
@@ -83,11 +78,7 @@
             </div>
             <!-- How to add shoping cart -->
             <div class="container shopping-cart">
-                <!-- <button type="button" class="btn btn-success" data-toggle="modal" data-target="#cartModal">
-      View Cart
-    </button>  
-  </div>
-   -->
+
             </div>
             <!-- End shopping cart -->
         </header>
@@ -213,7 +204,7 @@
                                 </div>
                             </div>
                             <div class="red_button add_to_cart_button">
-                                <a class="addToCard" data-id="1" href="#"> <i class="fas fa-shopping-cart"></i></a>
+                                <a class="addToCard" data-id="1" href="javascript:;"> <i class="fas fa-shopping-cart"></i></a>
                             </div>
                         </div>
 
@@ -230,11 +221,11 @@
                                     <h6 class="product_name">
                                         <a href="javascript:;">Samsung</a>
                                     </h6>
-                                    <div class="product_price">$ 200</div>
+                                    <div class="product_price">$ 300</div>
                                 </div>
                             </div>
                             <div class="red_button add_to_cart_button">
-                                <a class="addToCard" data-id="2" href="#"><i class="fas fa-shopping-cart"></i></a>
+                                <a class="addToCard" data-id="2" href="javascript:;"><i class="fas fa-shopping-cart"></i></a>
                             </div>
                         </div>
 
@@ -251,11 +242,11 @@
                                     <h6 class="product_name">
                                         <a href="javascript:;">Samsung</a>
                                     </h6>
-                                    <div class="product_price">$ 200</div>
+                                    <div class="product_price">$ 150</div>
                                 </div>
                             </div>
                             <div class="red_button add_to_cart_button">
-                                <a class="addToCard" data-id="3" href="#"><i class="fas fa-shopping-cart"></i></a>
+                                <a class="addToCard" data-id="3" href="javascript:;"><i class="fas fa-shopping-cart"></i></a>
                             </div>
                         </div>
 
@@ -272,11 +263,11 @@
                                     <h6 class="product_name">
                                         <a href="javascript:;">Samsung</a>
                                     </h6>
-                                    <div class="product_price">$ 200</div>
+                                    <div class="product_price">$ 100</div>
                                 </div>
                             </div>
                             <div class="red_button add_to_cart_button">
-                                <a class="addToCard" data-id="4" href="#"><i class="fas fa-shopping-cart"></i></a>
+                                <a class="addToCard" data-id="4" href="javascript:;"><i class="fas fa-shopping-cart"></i></a>
                             </div>
                         </div>
                     </div>
@@ -285,7 +276,7 @@
                     <!-- Load More Button -->
                     <button id="loadMore">Load More...</button>
                     <!--showLess  -->
-                    <button id="showLess">Show Less...</button>
+                    <!-- <button id="showLess">Show Less...</button> -->
                 </div>
             </div>
         </div>
@@ -711,6 +702,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- Scroll To Top -->
+        <button onclick="topFunction()" id="scrollBtn" title="Go to top"></button>
     </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -832,6 +826,29 @@
                 menuActive = false;
             };
         });
+        //Khai báo scroll
+        var scroll = document.getElementById("scrollBtn");
+
+        //Khi người dùng cuộn chuột thì gọi hàm scrollFunction
+        window.onscroll = function() {
+            scrollFunction()
+        };
+        // khai báo hàm scrollFunction
+        function scrollFunction() {
+            // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                //nếu lớn hơn 20px thì hiện button
+                scroll.style.display = "block";
+            } else {
+                //nếu nhỏ hơn 20px thì ẩn button
+                scroll.style.display = "none";
+            }
+        }
+        //Nếu button được click thì nhảy về đầu trang
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
 </body>
 

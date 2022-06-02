@@ -1,6 +1,15 @@
 // https://smartlearning.vn/account/login/submit
 
 $(document).ready(function() {
+    $('#tab-login').on('click', function() {
+        $('#form-login').css("display", "block");
+        $('#form-signup').css("display", "none");
+    });
+    $('#tab-signup').on('click', function() {
+        $('#form-signup').css("display", "block");
+        $('#form-login').css("display", "none");
+    });
+
     $("form").submit(function(event) {
         var formData = {
             username: $("#username").val(),

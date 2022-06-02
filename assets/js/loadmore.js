@@ -1,17 +1,21 @@
 $(function() {
     const itemShow = 4;
+    const maxItem = 20;
     $('#loadMore').on('click', function() {
 
-        $('.product-grid').append(html);
+
         let sumItem = $('.product-grid .product-item').length;
-        if (sumItem > itemShow) {
-            $('#showLess').css("display", "block");
-        };
+        if (sumItem > maxItem) {
+            alert("Không thể hiển thị thêm sản phẩm được nữa!");
+            // $('#showLess').css("display", "block");
+        } else {
+            $('.product-grid').append(html);
+        }
     });
 
-    $('#showLess').on('click', function() {
+    // $('#showLess').on('click', function() {
 
-    });
+    // });
 
     const html = `
     <div class="row mt-5">
@@ -28,7 +32,7 @@ $(function() {
                             <h6 class="product_name">
                                 <a href="javascript:;">Samsung</a>
                             </h6>
-                            <div class="product_price">$ 200</div>
+                            <div class="product_price">$ 485</div>
                         </div>
                     </div>
                     <div class="red_button add_to_cart_button">
@@ -49,7 +53,7 @@ $(function() {
                     <h6 class="product_name">
                       <a href="javascript:;">Samsung</a>
                         </h6>
-                        <div class="product_price">$ 200</div>
+                        <div class="product_price">$ 199</div>
                     </div>
                 </div>
                 <div class="red_button add_to_cart_button">
@@ -70,7 +74,7 @@ $(function() {
                     <h6 class="product_name">
                       <a href="javascript:;">Samsung</a>
                     </h6>
-                    <div class="product_price">$ 200</div>
+                    <div class="product_price">$ 350</div>
                 </div>
             </div>
             <div class="red_button add_to_cart_button">
@@ -91,7 +95,7 @@ $(function() {
                     <h6 class="product_name">
                       <a href="javascript:;">Samsung</a>
                 </h6>
-                <div class="product_price">$ 200</div>
+                <div class="product_price">$ 250</div>
             </div>
     </div>
     <div class="red_button add_to_cart_button">

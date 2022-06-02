@@ -11,9 +11,12 @@
 </HEAD>
 
 <body>
+    <div class="title">
+        <h1 class="text" id="tab-login"> login in </h1>
+        <h1 class="text" id="tab-signup"> sign up</h1>
+    </div>
     <section id="login">
-        <h1 class="text"> sign up</h1>
-        <form method="post">
+        <form method="post" id="form-login">
             <div class="container">
                 <label for="username">User Name <span class="req">*</span></label>
                 <input type="text" id="username" name="username" placeholder="Enter Username" required>
@@ -23,6 +26,23 @@
                 <button type="submit">Login</button>
             </div>
         </form>
+        <form method="post" id="form-signup">
+            <div class="container">
+                <label for="username">User Name <span class="req">*</span></label>
+                <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                <label for="password">Password <span class="req">*</span></label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                <label for="username">User Name <span class="req">*</span></label>
+                <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                <label for="password">Password <span class="req">*</span></label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                <label><input class="custom-checkbox" type="checkbox" checked="checked" name="remember"> Remember me</label>
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </section>
+    <section id="test" style="background: white">
+        <h1>aaaa</h1>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="/assets/js/login.js"></script>

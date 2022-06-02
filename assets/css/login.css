@@ -4,6 +4,12 @@ body {
     height: 100%;
 }
 
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 #login {
     /* position: relative; */
     height: 80vh;
@@ -23,8 +29,12 @@ form {
 
 .text {
     color: #f7ca18;
-    padding-left: 150px;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    margin: 0px 10px;
+}
+
+#form-signup {
+    display: none;
 }
 
 label {
