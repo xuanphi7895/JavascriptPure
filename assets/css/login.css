@@ -10,9 +10,9 @@ body {
     justify-content: center;
 }
 
-#login {
+#content {
     /* position: relative; */
-    height: 80vh;
+    height: auto;
     width: 405px;
     margin: auto;
     padding: 60px 60px;
@@ -24,7 +24,7 @@ body {
 }
 
 form {
-    padding-top: 80px;
+    padding-top: 10px;
 }
 
 .text {
@@ -49,7 +49,8 @@ label .req {
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="email"] {
     border: none;
     width: 89%;
     padding: 10px 20px;

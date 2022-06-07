@@ -8,14 +8,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/login.css">
+    <style>
+        .nav-pills {
+            width: 450px;
+            display: flex;
+        }
+        
+        .nav-item {
+            width: 50%;
+        }
+        
+        .nav-pills .nav-link {
+            font-weight: bold;
+            padding-top: 13px;
+            text-align: center;
+            color: #f7ca18;
+            height: 100px;
+        }
+        
+        .nav-pills .nav-link.active {
+            /* background: #fff; */
+            color: #fff;
+        }
+        
+        .nav-pills .nav-link:hover {
+            /* background: #fff; */
+            color: red;
+        }
+        
+        .nav-pills li a {
+            color: #f7ca18;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-right: 30px;
+            padding-left: 0;
+            padding-right: 0;
+            text-transform: uppercase;
+        }
+    </style>
 </HEAD>
 
 <body>
-    <div class="title">
+    <!-- <div class="title">
         <h1 class="text" id="tab-login"> login in </h1>
         <h1 class="text" id="tab-signup"> sign up</h1>
-    </div>
-    <section id="login">
+    </div> -->
+    <section id="content">
+        <div class="title">
+            <ul class="nav nav-pills" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="pill" id="login" href="#login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" id="signup" href="#regis">Register</a>
+                </li>
+            </ul>
+        </div>
         <form method="post" id="form-login">
             <div class="container">
                 <label for="username">User Name <span class="req">*</span></label>
@@ -29,21 +78,17 @@
         <form method="post" id="form-signup">
             <div class="container">
                 <label for="username">User Name <span class="req">*</span></label>
-                <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                <input type="text" id="username1" name="username" placeholder="Enter Username" required>
                 <label for="password">Password <span class="req">*</span></label>
-                <input type="password" id="password" name="password" placeholder="Enter Password" required>
-                <label for="username">User Name <span class="req">*</span></label>
-                <input type="text" id="username" name="username" placeholder="Enter Username" required>
-                <label for="password">Password <span class="req">*</span></label>
-                <input type="password" id="password" name="password" placeholder="Enter Password" required>
-                <label><input class="custom-checkbox" type="checkbox" checked="checked" name="remember"> Remember me</label>
-                <button type="submit">Login</button>
+                <input type="password" id="password1" name="password" placeholder="Enter Password" required>
+                <label for="username">Email <span class="req">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Enter email" required>
+
+                <button type="submit">Sign Up</button>
             </div>
         </form>
     </section>
-    <section id="test" style="background: white">
-        <h1>aaaa</h1>
-    </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="/assets/js/login.js"></script>
 </body>
