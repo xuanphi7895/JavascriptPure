@@ -6,10 +6,15 @@ $(document).ready(function() {
         $(this).addClass("active");
         $('#form-login').css("display", "block");
         $('#form-signup').css("display", "none");
+
+        $('#form-login').addClass("tab-active");
+        // $('#form-signup').removeClass("tab-active");
     });
     $('#signup').on('click', function() {
         $(".nav-pills .nav-link").removeClass("active");
         $(this).addClass("active");
+        $('#form-login').removeClass("tab-active");
+        // $('#form-signup').addClass("tab-active");
         $('#form-signup').css("display", "block");
         $('#form-login').css({ "display": "none" });
     });

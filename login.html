@@ -12,6 +12,7 @@
         .nav-pills {
             width: 450px;
             display: flex;
+            list-style: none;
         }
         
         .nav-item {
@@ -46,6 +47,20 @@
             padding-right: 0;
             text-transform: uppercase;
         }
+        
+        .one {
+            background-color: pink;
+        }
+        /* 
+        .two {
+            background-color: cadetblue;
+        }
+        
+        */
+        
+        .tab-active {
+            background-color: pink;
+        }
     </style>
 </HEAD>
 
@@ -57,11 +72,11 @@
     <section id="content">
         <div class="title">
             <ul class="nav nav-pills" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="pill" id="login" href="#login">Login</a>
+                <li class="nav-item ">
+                    <a class="nav-link one active" data-toggle="pill" id="login" href="#login">Login</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="pill" id="signup" href="#regis">Register</a>
+                <li class="nav-item ">
+                    <a class="nav-link two" data-toggle="pill" id="signup" href="#regis">Register</a>
                 </li>
             </ul>
         </div>
